@@ -1,0 +1,15 @@
+@import "../../assets/styles/config";
+
+.RichHeaderNav {
+  height: 5vh;
+  display: flex;
+  flex-flow: row wrap;
+  background: $primary_background;
+  list-style: none;
+  align-items: center;
+  border-bottom: $base_border;
+
+  .RichLinks {
+    margin: 0.5rem;
+  }
+}

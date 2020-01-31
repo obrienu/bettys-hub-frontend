@@ -67,11 +67,17 @@
         padding: 0.5rem 0;
         border-bottom: $base_border;
       }
-      .ShowPagePrice {
+      .ShowPageFooter {
         height: 10%;
-        text-align: right;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
         padding: 0.5rem 0;
         font-weight: 700;
+
+        .fas.fa-cart-plus {
+          cursor: pointer;
+        }
       }
     }
   }

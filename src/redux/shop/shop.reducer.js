@@ -1,15 +1,16 @@
 import {
   GET_ITEMS,
   LOADING_ITEM,
-  GET_CATEGORY,
-  GET_SHOWPAGE
+  GET_SHOWPAGE,
+  GET_CATEGORY
 } from "./shop.types";
 
 const initialState = {
   items: {},
   loading: false,
   category: [],
-  showpage: {}
+  showpage: {},
+  cart: []
 };
 
 const shopReducer = (state = initialState, action) => {

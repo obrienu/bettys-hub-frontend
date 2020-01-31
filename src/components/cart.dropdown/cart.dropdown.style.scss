@@ -1,0 +1,33 @@
+@import "../../assets/styles/config";
+
+.CartDropdown {
+  position: absolute;
+  width: 240px;
+  height: 340px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border: 1px solid $primary_text-color;
+  background-color: white;
+  top: 15vh;
+  right: 0;
+  z-index: 5;
+  align-items: center;
+
+  @include mediaSm {
+    left: 0;
+  }
+
+  .CartItems {
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    color: $primary_text-color;
+  }
+}
+.EmptyMessage {
+  font-size: 1rem;
+  margin: 3rem auto;
+  color: $primary_text-color;
+}

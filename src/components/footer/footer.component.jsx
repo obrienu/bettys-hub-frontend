@@ -17,39 +17,39 @@ const Footer = () => {
             </Link>
           </li>
           <li className="FooterLinks">
-            <Link className="FooterLink" to="/Fabrics">
+            <Link className="FooterLink" to="/fabric">
               Fabrics
             </Link>
           </li>
           <li className="FooterLinks">
-            <Link className="FooterLink" to="/Accessories">
+            <Link className="FooterLink" to="/accessories">
               Accessories
             </Link>
           </li>
           <li className="FooterLinks">
-            <Link className="FooterLink" to="/Rich">
+            <Link className="FooterLink" to="/rich">
               Rich
             </Link>
           </li>
         </div>
         <div className="FooterTopSection">
           <li className="FooterLinks">
-            <Link className="FooterLink" to="/About">
-              About Us
+            <Link className="FooterLink" to="/checkout">
+              Checkout
             </Link>
           </li>
           <li className="FooterLinks">
-            <Link className="FooterLink" to="/Contact">
+            <Link className="FooterLink" to="/contact">
               Contact Us
             </Link>
           </li>
           <li className="FooterLinks">
-            <Link className="FooterLink" to="/Accessories">
+            <Link className="FooterLink" to="/accessories">
               Blog
             </Link>
           </li>
           <li className="FooterLinks">
-            <Link className="FooterLink" to="/Fabric">
+            <Link className="FooterLink" to="/fabric">
               Shop
             </Link>
           </li>

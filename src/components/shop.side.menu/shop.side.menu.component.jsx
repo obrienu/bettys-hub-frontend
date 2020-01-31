@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import "./shop.side.menu.style.scss";
 import { NavLink } from "react-router-dom";
-import { connect } from "react-redux";
 
 class ShopSideMenu extends Component {
   render() {
@@ -35,6 +34,4 @@ class ShopSideMenu extends Component {
   }
 }
 
-const mapDispatchToProps = dispatch => ({});
-
-export default connect(null, mapDispatchToProps)(ShopSideMenu);
+export default ShopSideMenu;

@@ -3,6 +3,7 @@ import Logo from "../../assets/img/logo1.png";
 import { NavLink } from "react-router-dom";
 import "./header.style.scss";
 import MenuBar from "../toggle.menu/toggle.menu.component";
+import CartIcon from "../cart.icon/cart.icon.component";
 
 export class Header extends Component {
   state = { showMenu: false };
@@ -35,7 +36,7 @@ export class Header extends Component {
           </NavLink>
         </li>
         <li className="links">
-          <NavLink activeClassName="ActiveLink" className="Link" to="/Rich">
+          <NavLink activeClassName="ActiveLink" className="Link" to="/rich">
             Rich
           </NavLink>
         </li>
@@ -45,8 +46,8 @@ export class Header extends Component {
           </NavLink>
         </li>
         <li className="links">
-          <NavLink activeClassName="ActiveLink" className="Link" to="/About">
-            About
+          <NavLink activeClassName="ActiveLink" className="Link" to="/checkout">
+            Checkout
           </NavLink>
         </li>
         <li className="links">
@@ -85,7 +86,7 @@ export class Header extends Component {
           </NavLink>
         </li>
         <li onClick={this.toggleMenu} className="links">
-          <NavLink activeClassName="ActiveLink" className="Link" to="/Rich">
+          <NavLink activeClassName="ActiveLink" className="Link" to="/rich">
             Rich
           </NavLink>
         </li>
@@ -95,8 +96,8 @@ export class Header extends Component {
           </NavLink>
         </li>
         <li onClick={this.toggleMenu} className="links">
-          <NavLink activeClassName="ActiveLink" className="Link" to="/About">
-            About
+          <NavLink activeClassName="ActiveLink" className="Link" to="/checkout">
+            Checkout
           </NavLink>
         </li>
         <li onClick={this.toggleMenu} className="links">
@@ -134,6 +135,9 @@ export class Header extends Component {
               <a className="SocialLink" href="#">
                 <i className="Link fab fa-twitter"></i>
               </a>
+            </li>
+            <li className="Links">
+              <CartIcon />
             </li>
           </ul>
         </div>

@@ -147,7 +147,7 @@ export class ContactUs extends Component {
             <Dropdown
               isRequired={true}
               label="Contact Details"
-              options={["", "WhatsApp", "Call", "Messanger", "Email"]}
+              options={["", "WhatsApp", "Call", "Messenger", "Email"]}
               onChange={event => this.handleChange(event)}
               value={this.state.contact}
               name="contact"

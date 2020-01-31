@@ -6,6 +6,7 @@ import { selectShowpage } from "../../redux/shop/shop.selection";
 import { getShowpage } from "../../redux/shop/shop.actions";
 import { createStructuredSelector } from "reselect";
 import Loader from "../../components/loader/loader.component";
+import { addCartItem } from "../../redux/cart/cart.actions";
 
 class ShowPage extends Component {
   constructor(props) {
@@ -40,6 +41,7 @@ class ShowPage extends Component {
 
   render() {
     const { name, price, description, imageUrl } = this.props.item;
+    const { addCartItem } = this.props;
     return this.props.item.name ? (
       <div className="ShowPage">
         <div className="ShowPageContainer">
@@ -65,7 +67,16 @@ class ShowPage extends Component {
           <div className="ShowPageText">
             <h3>{name.toUpperCase()}</h3>
             <div className="ShowPageDescription">{description}</div>
-            <div className="ShowPagePrice">Price: #{price}</div>
+            <div className="ShowPageFooter">
+              <span
+                title="Add to cart"
+                onClick={() => addCartItem(this.props.item)}
+                className="cart"
+              >
+                <i className="fas fa-cart-plus">XX</i>
+              </span>
+              <span>Price: #{price}</span>
+            </div>
           </div>
         </div>
       </div>
@@ -80,7 +91,8 @@ const mapStateToProps = createStructuredSelector({
 });
 
 const mapDispatchToProps = dispatch => ({
-  getShowpage: (shop, id) => dispatch(getShowpage(shop, id))
+  getShowpage: (shop, id) => dispatch(getShowpage(shop, id)),
+  addCartItem: item => dispatch(addCartItem(item))
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(ShowPage);

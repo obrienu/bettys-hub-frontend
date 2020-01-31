@@ -1,13 +1,13 @@
 @import "../../assets/styles/config";
 
 .CustomInput {
-  width: 80%;
+  width: 100%;
   background-color: $primary_background;
   position: relative;
+  margin-top: 1rem;
+  margin-left: 1rem;
 
   .CustomInputInput {
-    margin-top: 1rem;
-    margin-left: 1rem;
     color: $primary_text_color;
     background: $primary_background;
     border: none;
@@ -38,7 +38,7 @@
     font-weight: normal;
     position: absolute;
     pointer-events: none;
-    left: 1.5rem;
+    left: 0.5rem;
     top: 10px;
     transition: 300ms ease all;
 
