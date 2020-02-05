@@ -1,0 +1,26 @@
+@import "../../assets/styles/config";
+
+.AddBar {
+  width: 100%;
+  margin: 2rem 0;
+  @include mediaMd {
+    margin: 1rem auto;
+  }
+  .AddBarHeader {
+    height: 3rem;
+    background-color: $secondary_purple;
+    color: darken($primary_purple, 70);
+    border-top-left-radius: 5px;
+    line-height: 3rem;
+    padding-left: 1rem;
+    font-size: 1.5rem;
+  }
+
+  .AddBarBody {
+    display: flex;
+    flex-flow: column wrap;
+    @include mediaMd {
+      flex-flow: row wrap;
+    }
+  }
+}

@@ -1,0 +1,74 @@
+@import "../../../assets/styles/config";
+
+.RichHome {
+  width: 95%;
+  margin: 0 auto;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: max-content max-content;
+  grid-template-areas: "aside1 carousel carousel carousel aside2" "main main main main main";
+  @include mediaLg {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "aside1 carousel carousel carousel" "aside2 main main main";
+  }
+  @include mediaMd {
+    grid-template-rows: max-content max-content max-content;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "carousel carousel carousel carousel" "main main main main" "aside aside aside aside";
+  }
+
+  @include mediaSm {
+    width: 100%;
+  }
+
+  .RichHomeCarousel {
+    height: 23rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 2rem auto;
+    grid-area: carousel;
+
+    @include mediaSm {
+      margin: 0;
+      height: 12rem;
+    }
+
+    .RichHomeCarouselContent {
+      font-size: 5rem;
+      font-weight: 600;
+      color: #fff;
+    }
+  }
+
+  .RichHomeMainAside {
+    display: none;
+    grid-area: aside;
+    width: 100%;
+    @include mediaMd {
+      display: block;
+    }
+  }
+
+  .RichHomeMainAside1 {
+    grid-area: aside1;
+    width: 100%;
+
+    @include mediaMd {
+      display: none;
+    }
+  }
+  .RichHomeMainAside2 {
+    grid-area: aside2;
+    width: 100%;
+
+    @include mediaMd {
+      display: none;
+    }
+  }
+
+  .RichHomeMainContent {
+    grid-area: main;
+  }
+}

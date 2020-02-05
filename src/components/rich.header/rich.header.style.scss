@@ -10,6 +10,10 @@
   border-bottom: $base_border;
 
   .RichLinks {
-    margin: 0.5rem;
+    margin: 0.5rem 1rem;
+
+    @include mediaSm {
+      margin: 0.5rem 0.3rem;
+    }
   }
 }

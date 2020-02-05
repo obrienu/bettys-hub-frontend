@@ -7,6 +7,8 @@
   width: 100%;
   background: $primary_background;
   background-image: $footer_image;
+  position: fixed;
+  z-index: 6;
 
   .HeaderLogoContainer {
     height: 10vh;

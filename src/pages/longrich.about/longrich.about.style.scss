@@ -1,0 +1,58 @@
+@import "../../assets/styles/config";
+
+.LongrichAbout {
+  width: 80%;
+  margin: 1rem auto 0;
+  padding-bottom: 1rem;
+
+  @include mediaMd {
+    width: 95%;
+  }
+  .LongrichAboutHeader {
+    width: 100%;
+    font-size: 2rem;
+    border-bottom: $base_border;
+    color: $primary_purple;
+
+    @include mediaMd {
+      font-size: 1.5rem;
+    }
+  }
+
+  .LongrichAboutContent {
+    .LongrichAboutContentText {
+      padding: 1rem;
+      font-size: 1.2rem;
+      grid-area: body;
+      text-align: justify;
+
+      h1,
+      h3,
+      h4,
+      p {
+        margin: 1rem 0;
+      }
+      p {
+        color: $primary_text_color;
+      }
+      @include mediaMd {
+        font-size: 1rem;
+      }
+    }
+    .LongrichAboutContentImage {
+      height: 400px;
+      width: 400px;
+      padding: 1rem;
+      grid-area: img;
+      float: right;
+
+      @include mediaLg {
+        height: 300px;
+        width: 300px;
+      }
+      @include mediaSm {
+        float: none;
+      }
+    }
+  }
+}

@@ -17,7 +17,7 @@ export class Header extends Component {
     const Menu = (
       <ul className="HeaderNavLink">
         <li className="links">
-          <NavLink activeClassName="ActiveLink" className="Link" to="/">
+          <NavLink activeClassName="ActiveLink" className="Link" to="/" exact>
             Home
           </NavLink>
         </li>
@@ -40,11 +40,12 @@ export class Header extends Component {
             Rich
           </NavLink>
         </li>
-        <li className="links">
+        {/*         <li className="links">
           <NavLink activeClassName="ActiveLink" className="Link" to="/Blog">
             Blog
           </NavLink>
         </li>
+ */}{" "}
         <li className="links">
           <NavLink activeClassName="ActiveLink" className="Link" to="/checkout">
             Checkout
@@ -67,7 +68,7 @@ export class Header extends Component {
         }
       >
         <li onClick={this.toggleMenu} className="links">
-          <NavLink activeClassName="ActiveLink" className="Link" to="/">
+          <NavLink activeClassName="ActiveLink" className="Link" to="/" exact>
             Home
           </NavLink>
         </li>
@@ -90,11 +91,12 @@ export class Header extends Component {
             Rich
           </NavLink>
         </li>
-        <li onClick={this.toggleMenu} className="links">
+        {/*         <li onClick={this.toggleMenu} className="links">
           <NavLink activeClassName="ActiveLink" className="Link" to="/Blog">
             Blog
           </NavLink>
         </li>
+ */}{" "}
         <li onClick={this.toggleMenu} className="links">
           <NavLink activeClassName="ActiveLink" className="Link" to="/checkout">
             Checkout

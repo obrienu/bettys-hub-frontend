@@ -1,0 +1,66 @@
+@import "../../assets/styles/config";
+
+.RichJoin {
+  width: 80%;
+  margin: 1rem auto 0;
+  padding-bottom: 1rem;
+  .RichJoinHeader {
+    width: 100%;
+    font-size: 2rem;
+    border-bottom: $base_border;
+    color: $primary_purple;
+
+    @include mediaMd {
+      font-size: 1.5rem;
+    }
+  }
+
+  .RichJoinContent {
+    line-height: 1.5rem;
+    font-size: 1.2rem;
+
+    ul {
+      margin-left: 1rem;
+      list-style: disc;
+      font-size: 1rem;
+    }
+    ol {
+      margin-left: 1rem;
+      font-size: 1rem;
+    }
+
+    h1,
+    h3,
+    h4,
+    p {
+      margin: 1rem 0;
+    }
+    p {
+      color: $primary_text_color;
+    }
+  }
+
+  .RichJoinTable {
+    &table {
+      width: 100%;
+      border: solid 1px $primary_text_color;
+      margin: 0 auto;
+      @include mediaMd {
+        width: 90%;
+      }
+    }
+
+    th,
+    td {
+      font-size: 0.9rem;
+      height: 2rem;
+      width: 2%;
+      margin: 1.6%;
+      border: solid 1px $primary_text_color;
+      text-align: center;
+      @include mediaMd {
+        font-size: 0.8rem;
+      }
+    }
+  }
+}

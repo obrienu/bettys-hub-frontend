@@ -12,6 +12,7 @@ class ShopSideMenu extends Component {
             activeClassName="ActiveShopMenuCategoryLink"
             className="ShopMenuCategoryLink"
             to={`/${shop}`}
+            exact
           >
             {" "}
             ALL

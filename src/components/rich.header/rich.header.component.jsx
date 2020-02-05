@@ -6,7 +6,7 @@ const RichHeader = () => {
   return (
     <div className="RichHeaderNav">
       <li className="RichLinks">
-        <NavLink activeClassName="ActiveLink" className="Link" to="/rich">
+        <NavLink activeClassName="ActiveLink" className="Link" to="/rich" exact>
           Rich
         </NavLink>
       </li>
@@ -14,18 +14,29 @@ const RichHeader = () => {
         <NavLink
           activeClassName="ActiveLink"
           className="Link"
-          to="/rich/products"
+          to="/rich/join"
+          exact
         >
-          Products
+          Join Longrich
         </NavLink>
       </li>
       <li className="RichLinks">
-        <NavLink activeClassName="ActiveLink" className="Link" to="/rich/blog">
-          Blog
+        <NavLink
+          activeClassName="ActiveLink"
+          className="Link"
+          to="/rich/compensation"
+          exact
+        >
+          Compensation Plan
         </NavLink>
       </li>
       <li className="RichLinks">
-        <NavLink activeClassName="ActiveLink" className="Link" to="/rich/about">
+        <NavLink
+          activeClassName="ActiveLink"
+          className="Link"
+          exact
+          to="/rich/about"
+        >
           About Rich
         </NavLink>
       </li>

@@ -30,9 +30,9 @@ a {
 }
 
 .Main {
-  min-height: calc(100vh - 15rem - 15vh);
-
+  min-height: calc(100vh - 15rem);
+  padding-top: 15vh;
   @include mediaMd {
-    min-height: calc(100vh - 20rem - 15vh);
+    min-height: calc(100vh - 20rem);
   }
 }
