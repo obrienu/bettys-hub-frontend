@@ -40,12 +40,12 @@ export class Header extends Component {
             Rich
           </NavLink>
         </li>
-        {/*         <li className="links">
-          <NavLink activeClassName="ActiveLink" className="Link" to="/Blog">
-            Blog
+        <li className="links">
+          <NavLink activeClassName="ActiveLink" className="Link" to="/about">
+            About
           </NavLink>
         </li>
- */}{" "}
+
         <li className="links">
           <NavLink activeClassName="ActiveLink" className="Link" to="/checkout">
             Checkout
@@ -91,12 +91,11 @@ export class Header extends Component {
             Rich
           </NavLink>
         </li>
-        {/*         <li onClick={this.toggleMenu} className="links">
-          <NavLink activeClassName="ActiveLink" className="Link" to="/Blog">
-            Blog
+        <li onClick={this.toggleMenu} className="links">
+          <NavLink activeClassName="ActiveLink" className="Link" to="/about">
+            About
           </NavLink>
         </li>
- */}{" "}
         <li onClick={this.toggleMenu} className="links">
           <NavLink activeClassName="ActiveLink" className="Link" to="/checkout">
             Checkout

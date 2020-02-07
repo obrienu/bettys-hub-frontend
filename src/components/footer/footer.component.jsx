@@ -43,12 +43,11 @@ const Footer = () => {
               Contact Us
             </Link>
           </li>
-          {/*           <li className="FooterLinks">
-            <Link className="FooterLink" to="/accessories">
-              Blog
+          <li className="FooterLinks">
+            <Link className="FooterLink" to="/about">
+              About
             </Link>
           </li>
- */}{" "}
           <li className="FooterLinks">
             <Link className="FooterLink" to="/fabric">
               Shop

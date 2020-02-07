@@ -1,0 +1,32 @@
+@import "../../assets/styles/config";
+
+.BettysHubAboutContainer {
+  width: 100%;
+  min-height: calc(100vh - 21rem);
+  background-color: $primary_background;
+  padding: 1.5rem 0;
+
+  .BettysHubAbout {
+    width: 80%;
+    margin: auto;
+
+    .BettysHubAboutHeader {
+      font-size: 2rem;
+      color: $secondary_purple;
+      border-bottom: $base_border;
+
+      strong {
+        color: black;
+      }
+    }
+  }
+
+  h1,
+  p {
+    margin: 1rem 0;
+  }
+
+  .BettysHubAboutText {
+    color: $primary_text_color;
+  }
+}
