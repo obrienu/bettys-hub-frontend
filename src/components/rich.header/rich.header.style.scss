@@ -15,5 +15,8 @@
     @include mediaSm {
       margin: 0.5rem 0.3rem;
     }
+    @include mediaXm {
+      font-size: 0.8rem;
+    }
   }
 }

@@ -10,10 +10,9 @@ const Carousel = () => {
         <div className="CarouselTopText">
           <h1 className="CarouselHeaderText">Bettys Hub</h1>
           <h6 className="CarouselBodyText">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae
-            quas consequatur similique exercitationem et reprehenderit impedit
-            magni, quidem eius illo commodi illum sint fuga error odit debitis
-            vero dolore nobis.
+            Your No. 1 stop shop for QUALITY and BUDGET FRIENDLY FABRICS and
+            FASHION ACCESSORIES. We are commited to giving you great bargains
+            and excellent service.
           </h6>
         </div>
       </div>

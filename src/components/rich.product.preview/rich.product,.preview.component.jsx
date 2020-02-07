@@ -18,22 +18,24 @@ class RichProductPreview extends Component {
 
   render() {
     const { isLoading, preview } = this.props;
-    return isLoading ? (
-      <Loader style={{ margin: "2rem" }} />
-    ) : (
+    return (
       <section className="RichProductPreview">
         <h1 className="RichProductPreviewHeader">Bettys Rich</h1>
-        <div className="ProductPreview">
-          {preview
-            .filter((rich, index) => index < 3)
-            .map((rich, index) => (
-              <RichProductItem
-                key={index}
-                {...rich}
-                isReversed={(index + 1) % 2 === 0}
-              />
-            ))}
-        </div>
+        {isLoading ? (
+          <Loader />
+        ) : (
+          <div className="ProductPreview">
+            {preview
+              .filter((rich, index) => index < 3)
+              .map((rich, index) => (
+                <RichProductItem
+                  key={index}
+                  {...rich}
+                  isReversed={(index + 1) % 2 === 0}
+                />
+              ))}
+          </div>
+        )}
       </section>
     );
   }

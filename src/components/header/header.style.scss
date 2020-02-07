@@ -3,7 +3,7 @@
 .HeaderContainer {
   display: flex;
   flex-flow: column nowrap;
-  height: 15vh;
+  height: 6rem;
   width: 100%;
   background: $primary_background;
   background-image: $footer_image;
@@ -11,7 +11,7 @@
   z-index: 6;
 
   .HeaderLogoContainer {
-    height: 10vh;
+    height: 4rem;
     display: flex;
     justify-content: center;
     border-bottom: $primary_purple solid 2px;
@@ -25,7 +25,7 @@
   .HeaderNav {
     display: flex;
     flex-flow: row nowrap;
-    height: 5vh;
+    height: 2rem;
     justify-content: space-between;
     border-bottom: $primary_purple solid 2px;
 
@@ -46,7 +46,7 @@
       margin: 0;
       position: absolute;
       right: 0;
-      top: 15vh;
+      top: 6rem;
       width: 8rem;
       height: 14rem;
       display: none;

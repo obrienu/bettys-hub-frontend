@@ -4,12 +4,12 @@
   position: absolute;
   z-index: 3;
   right: 35px;
-  top: 11vh;
+  top: 4.4rem;
   display: none;
   cursor: pointer;
   @include easeOut;
   @include mediaMd {
-    top: 11vh;
+    top: 4.4rem;
     display: block;
   }
 

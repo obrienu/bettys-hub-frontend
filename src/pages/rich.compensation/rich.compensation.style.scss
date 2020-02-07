@@ -88,6 +88,9 @@
       @include mediaMd {
         font-size: 0.8rem;
       }
+      @include mediaSm {
+        font-size: 0.7rem;
+      }
     }
   }
 }

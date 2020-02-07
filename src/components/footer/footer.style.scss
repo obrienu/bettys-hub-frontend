@@ -26,6 +26,9 @@
 
     .FooterTopSection {
       padding: 0 1rem;
+      @include mediaSm {
+        padding: 0;
+      }
 
       li.FooterLinks,
       li.FooterAddresses,

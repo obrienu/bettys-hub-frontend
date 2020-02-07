@@ -53,7 +53,7 @@ export class RichProductContainer extends Component {
     return (
       <div className="RichProductContainer">
         <header className="RichProductContainerHeader">Rich Products</header>
-        {items ? (
+        {items.length > 0 ? (
           <Fragment>
             <div className="RichProductContainerProducts">
               {items.map(product => (
