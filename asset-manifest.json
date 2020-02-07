@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/bettys-hub-frontend/static/css/main.fde58697.chunk.css",
-    "main.js": "/bettys-hub-frontend/static/js/main.88df7b98.chunk.js",
-    "main.js.map": "/bettys-hub-frontend/static/js/main.88df7b98.chunk.js.map",
+    "main.css": "/bettys-hub-frontend/static/css/main.584dd031.chunk.css",
+    "main.js": "/bettys-hub-frontend/static/js/main.34886368.chunk.js",
+    "main.js.map": "/bettys-hub-frontend/static/js/main.34886368.chunk.js.map",
     "runtime-main.js": "/bettys-hub-frontend/static/js/runtime-main.4b2474af.js",
     "runtime-main.js.map": "/bettys-hub-frontend/static/js/runtime-main.4b2474af.js.map",
     "static/js/2.0e42aeee.chunk.js": "/bettys-hub-frontend/static/js/2.0e42aeee.chunk.js",
     "static/js/2.0e42aeee.chunk.js.map": "/bettys-hub-frontend/static/js/2.0e42aeee.chunk.js.map",
     "index.html": "/bettys-hub-frontend/index.html",
-    "precache-manifest.9831f216d1a61a145caaed49a9cf008f.js": "/bettys-hub-frontend/precache-manifest.9831f216d1a61a145caaed49a9cf008f.js",
+    "precache-manifest.9cbfd252ca7d297c851fbb467f46b501.js": "/bettys-hub-frontend/precache-manifest.9cbfd252ca7d297c851fbb467f46b501.js",
     "service-worker.js": "/bettys-hub-frontend/service-worker.js",
-    "static/css/main.fde58697.chunk.css.map": "/bettys-hub-frontend/static/css/main.fde58697.chunk.css.map",
+    "static/css/main.584dd031.chunk.css.map": "/bettys-hub-frontend/static/css/main.584dd031.chunk.css.map",
     "static/js/2.0e42aeee.chunk.js.LICENSE": "/bettys-hub-frontend/static/js/2.0e42aeee.chunk.js.LICENSE",
     "static/media/accessories.jpg": "/bettys-hub-frontend/static/media/accessories.97f0ca3f.jpg",
-    "static/media/add1.jpg": "/bettys-hub-frontend/static/media/add1.b43f1f6a.jpg",
-    "static/media/add2.jpg": "/bettys-hub-frontend/static/media/add2.98c1dc2b.jpg",
+    "static/media/add1.jpg": "/bettys-hub-frontend/static/media/add1.d7a90211.jpg",
+    "static/media/add2.jpg": "/bettys-hub-frontend/static/media/add2.7aa141f0.jpg",
     "static/media/carousel.style.scss": "/bettys-hub-frontend/static/media/bg_low.630b80d3.jpg",
     "static/media/fabric.jpg": "/bettys-hub-frontend/static/media/fabric.70723a29.jpg",
-    "static/media/headoffice.jpg": "/bettys-hub-frontend/static/media/headoffice.1fccb951.jpg",
+    "static/media/headoffice.jpg": "/bettys-hub-frontend/static/media/headoffice.0a9985ee.jpg",
     "static/media/image1.jpg": "/bettys-hub-frontend/static/media/image1.664e147e.jpg",
     "static/media/image2.png": "/bettys-hub-frontend/static/media/image2.99202acb.png",
     "static/media/image2.jpg": "/bettys-hub-frontend/static/media/image2.edf5cee0.jpg",
@@ -34,7 +34,7 @@
   "entrypoints": [
     "static/js/runtime-main.4b2474af.js",
     "static/js/2.0e42aeee.chunk.js",
-    "static/css/main.fde58697.chunk.css",
-    "static/js/main.88df7b98.chunk.js"
+    "static/css/main.584dd031.chunk.css",
+    "static/js/main.34886368.chunk.js"
   ]
 }

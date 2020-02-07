@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d055d22cd3e7fa05e3abb5e6f5ffd5f0",
+    "revision": "5ce8de8d7a656d8c83864209597eecbb",
     "url": "/bettys-hub-frontend/index.html"
   },
   {
-    "revision": "a3f5735f98d27fbcf896",
-    "url": "/bettys-hub-frontend/static/css/main.fde58697.chunk.css"
+    "revision": "1331d03dc3a582eb3dc1",
+    "url": "/bettys-hub-frontend/static/css/main.584dd031.chunk.css"
   },
   {
     "revision": "5a3a68f7340e31af4c9d",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/bettys-hub-frontend/static/js/2.0e42aeee.chunk.js.LICENSE"
   },
   {
-    "revision": "a3f5735f98d27fbcf896",
-    "url": "/bettys-hub-frontend/static/js/main.88df7b98.chunk.js"
+    "revision": "1331d03dc3a582eb3dc1",
+    "url": "/bettys-hub-frontend/static/js/main.34886368.chunk.js"
   },
   {
     "revision": "fbd9bc547407b502baa0",
@@ -28,12 +28,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/bettys-hub-frontend/static/media/accessories.97f0ca3f.jpg"
   },
   {
-    "revision": "b43f1f6aa810b072449048599947c645",
-    "url": "/bettys-hub-frontend/static/media/add1.b43f1f6a.jpg"
+    "revision": "d7a902118eba31fe0d74e3b22fd427b3",
+    "url": "/bettys-hub-frontend/static/media/add1.d7a90211.jpg"
   },
   {
-    "revision": "98c1dc2b33a3bdb4be3fd541db942367",
-    "url": "/bettys-hub-frontend/static/media/add2.98c1dc2b.jpg"
+    "revision": "7aa141f09b914de063f991f349aa68bb",
+    "url": "/bettys-hub-frontend/static/media/add2.7aa141f0.jpg"
   },
   {
     "revision": "630b80d38612ad752048f1b8a7e32052",
@@ -44,8 +44,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/bettys-hub-frontend/static/media/fabric.70723a29.jpg"
   },
   {
-    "revision": "1fccb95152233abe974b12410f847644",
-    "url": "/bettys-hub-frontend/static/media/headoffice.1fccb951.jpg"
+    "revision": "0a9985ee508378474d35c14635889742",
+    "url": "/bettys-hub-frontend/static/media/headoffice.0a9985ee.jpg"
   },
   {
     "revision": "664e147ef267635108a4d1aa55b3da0e",
