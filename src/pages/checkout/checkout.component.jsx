@@ -46,7 +46,7 @@ class CheckoutPage extends Component {
       )
       .catch(err =>
         this.setState({
-          enquiry_status: err
+          enquiry_status: "Message not sent, please try again"
         })
       );
   }

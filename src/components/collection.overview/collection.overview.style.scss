@@ -6,28 +6,25 @@
   margin: 0 auto;
   display: flex;
   flex-flow: column;
+  @include mediaSm {
+    width: 100%;
+  }
 
   .CollectionOverviewHeader {
     width: 100%;
     border-bottom: $base_border;
     color: $secondary_purple;
+
+    @include mediaSm {
+      padding: 0 1rem;
+    }
   }
 
   .CollectionOverviewTop {
     width: 100%;
-    display: grid;
-    grid-gap: 1rem;
-    grid-template-columns: repeat(5, 1fr);
-    @include mediaLg {
-      grid-template-columns: repeat(4, 1fr);
-    }
-
-    @include mediaMd {
-      grid-template-columns: repeat(3, 1fr);
-    }
-    @include mediaSm {
-      grid-template-columns: repeat(2, 1fr);
-    }
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
   }
 
   .CollectionOverviewBottom {

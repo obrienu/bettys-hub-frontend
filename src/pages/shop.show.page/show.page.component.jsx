@@ -73,7 +73,7 @@ class ShowPage extends Component {
                 onClick={() => addCartItem(this.props.item)}
                 className="cart"
               >
-                <i className="fas fa-cart-plus">XX</i>
+                <i className="fas fa-cart-plus"></i>
               </span>
               <span>Price: #{price}</span>
             </div>

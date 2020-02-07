@@ -1,5 +1,10 @@
 import axios from "axios";
-import { LOADING_RICH, LOAD_RICH, LOAD_PREVIEW } from "./rich.types";
+import {
+  LOADING_RICH,
+  LOAD_RICH,
+  LOAD_PREVIEW,
+  LOAD_SINGLE_PRODUCT
+} from "./rich.types";
 import { getError } from "../errors/error.actions";
 
 export const getPreview = () => dispatch => {
@@ -28,6 +33,22 @@ export const getRich = () => dispatch => {
     .then(res =>
       dispatch({
         type: LOAD_RICH,
+        payload: res.data
+      })
+    )
+    .catch(err => getError(err.response.data.msg, err.response.status));
+};
+
+export const getSingleProduct = id => dispatch => {
+  dispatch({
+    type: LOADING_RICH
+  });
+
+  axios
+    .get(`api/rich/${id}`)
+    .then(res =>
+      dispatch({
+        type: LOAD_SINGLE_PRODUCT,
         payload: res.data
       })
     )

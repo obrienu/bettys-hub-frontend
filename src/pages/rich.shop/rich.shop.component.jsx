@@ -6,6 +6,7 @@ import HomePage from "./home/home.component";
 import LongrichAbout from "../longrich.about/longrich.about.component";
 import RichCompensation from "../rich.compensation/rich.compensation.component";
 import RichJoin from "../rich.join/rich.join.component";
+import ShowPage from "../rich.showpage/rich.showpage.component";
 
 export class RichShop extends Component {
   render() {
@@ -21,6 +22,7 @@ export class RichShop extends Component {
             component={RichCompensation}
           />
           <Route path={`${match.path}/join`} component={RichJoin} />
+          <Route path={`${match.path}/products/:id`} component={ShowPage} />
         </Switch>
       </div>
     );

@@ -1,12 +1,11 @@
 @import "../../assets/styles/config";
 
 .CollectionPreview {
-  height: 25rem;
   width: 90%;
   margin: 2rem auto;
   background: primary_background;
   @include mediaMd {
-    height: 40rem;
+    width: 100%;
   }
 
   .CollectionPreviewCategory {
@@ -34,19 +33,11 @@
 
   .CollectionPreviewItems {
     margin-top: 1rem;
-    display: grid;
-    grid-template-columns: repeat(4, 20%);
-    grid-template-rows: repeat(1, 1fr);
-    grid-gap: 6%;
-
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
     @include mediaMd {
-      grid-template-columns: repeat(2, 40%);
-      grid-template-rows: repeat(2, 1fr);
-    }
-    @include mediaSm {
-      grid-template-columns: repeat(2, 50%);
-      grid-template-rows: repeat(2, 1fr);
-      grid-gap: 1%;
+      justify-content: center;
     }
   }
 }

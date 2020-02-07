@@ -9,7 +9,7 @@ const RichCompensation = () => {
       </header>
 
       <div className="RichJoinContent">
-        <h4>TO JOIN LONGRICH CONTACT: AYODELE ELIZABETH ON 08065288667</h4>
+        <h4>TO JOIN LONGRICH CONTACT: ELIZABETH ON 08065288667</h4>
         <p>
           The process of becoming a Longrich distributor in Nigeria is a process
           made easy. This is in agreement with the president’s vision which says

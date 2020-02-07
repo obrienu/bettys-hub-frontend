@@ -18,24 +18,25 @@ const CollectionItem = ({ item, shop, history, addCartItem }) => {
   return (
     <div className="CollectionItem">
       <span className="CollectionItemFooterSale">Sale</span>
-      <div
+
+      <img
         onClick={handleClick}
-        style={{ backgroundImage: `url(${imageUrl[0]})` }}
         className="CollectionItemImage"
-      ></div>
-      <div className="CollectionItemBody">
-        <div className="CollectionItemName">{name}</div>
-        <div className="CollectionItemFooter">
-          <span className="CollectionItemFooterPrice"> # {price}</span>
-          <span
-            title="Add to cart"
-            onClick={addToCart}
-            className="CollectionItemFooterFavourite"
-          >
-            {" "}
-            <i className="fas fa-cart-plus">XX</i>
-          </span>
-        </div>
+        src={imageUrl[0]}
+        alt={name}
+      />
+
+      <div className="CollectionItemName">{name}</div>
+      <div className="CollectionItemFooter">
+        <span className="CollectionItemFooterPrice"> # {price}</span>
+        <span
+          title="Add to cart"
+          onClick={addToCart}
+          className="CollectionItemFooterFavourite"
+        >
+          {" "}
+          <i className="fas fa-cart-plus"></i>
+        </span>
       </div>
     </div>
   );

@@ -4,13 +4,24 @@ import "./rich.product.item.style.scss";
 import { withRouter } from "react-router-dom";
 import Button from "../button/button.component";
 
-const RichProductItem = ({ name, text, imageUrl, isReversed }) => {
+const RichProductItem = ({
+  name,
+  text,
+  imageUrl,
+  isReversed,
+  _id,
+  history
+}) => {
+  const handleClick = () => {
+    history.push(`/rich/products/${_id}`);
+  };
+
   const normal = (
     <div className="RichProductItem">
       <div className="RichProductText">
         <h1 className="RichProductHeader">{name}</h1>
         <p>{text.substring(0, 400)}......</p>
-        <Button onClick={() => {}} width={"6rem"} className="">
+        <Button onClick={handleClick} width={"6rem"} className="">
           Read More
         </Button>
       </div>
@@ -29,7 +40,7 @@ const RichProductItem = ({ name, text, imageUrl, isReversed }) => {
       <div className="RichProductText">
         <h1 className="RichProductHeaderRevered">{name}</h1>
         <p>{text.substring(0, 400)}......</p>
-        <Button onClick={() => {}} width={"6rem"} className="">
+        <Button onClick={handleClick} width={"6rem"} className="">
           Read More
         </Button>
       </div>

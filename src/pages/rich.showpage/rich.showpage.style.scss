@@ -1,0 +1,28 @@
+@import "../../assets/styles/config";
+
+.RichShowPage {
+  width: 70%;
+  margin: 0 auto;
+  @include mediaSm {
+    width: 100%;
+  }
+
+  hr {
+    margin: 1rem;
+  }
+
+  .RichShowPageHeader {
+    color: $secondary_purple;
+    margin: 1rem 0;
+  }
+
+  .fa-cart-plus {
+    cursor: pointer;
+    color: $secondary_purple;
+    font-size: 1.5rem;
+
+    @include mediaSm {
+      font-size: 1rem;
+    }
+  }
+}
