@@ -2,7 +2,7 @@ import React from "react";
 import "./collection.preview.style.scss";
 import Loader from "../loader/loader.component";
 
-const CollectionPreview = WrappedComponent => ({ data, name }) => {
+const CollectionPreview = WrappedComponent => ({ data, name, itemNumber }) => {
   return (
     <section className="CollectionPreview">
       <div className="CollectionPreviewCategory">
@@ -12,7 +12,7 @@ const CollectionPreview = WrappedComponent => ({ data, name }) => {
       {data ? (
         <div className="CollectionPreviewItems">
           {data
-            .filter((items, index) => index < 4)
+            .filter((items, index) => index < itemNumber)
             .map(item => (
               <WrappedComponent
                 key={item._id}

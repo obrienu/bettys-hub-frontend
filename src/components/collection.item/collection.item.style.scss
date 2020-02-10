@@ -17,8 +17,8 @@
   }
   @include mediaSm {
     height: 120px;
-    width: 91px;
-    margin: 0.5rem 1px;
+    min-width: 91px;
+    margin: 0.5rem;
   }
 
   .CollectionItemFooterSale {

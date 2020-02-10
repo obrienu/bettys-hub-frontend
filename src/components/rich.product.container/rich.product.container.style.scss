@@ -23,6 +23,7 @@
     width: 100%;
     display: flex;
     flex-flow: row wrap;
+    overflow-x: auto;
     justify-content: center;
   }
 }
