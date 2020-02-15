@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "70995b18b8776b68ef1ffabc9a21c827",
+    "revision": "96aa2965f5be436bd2a1fa63177ae6f7",
     "url": "/bettys-hub-frontend/index.html"
   },
   {
-    "revision": "ec29cd4e2ac826a7514d",
-    "url": "/bettys-hub-frontend/static/css/main.f66c5930.chunk.css"
+    "revision": "d875368c6c4d4f8eccc0",
+    "url": "/bettys-hub-frontend/static/css/main.ec312563.chunk.css"
   },
   {
     "revision": "25c0a5706a8480319796",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/bettys-hub-frontend/static/js/2.30c5c042.chunk.js.LICENSE"
   },
   {
-    "revision": "ec29cd4e2ac826a7514d",
-    "url": "/bettys-hub-frontend/static/js/main.595893f3.chunk.js"
+    "revision": "d875368c6c4d4f8eccc0",
+    "url": "/bettys-hub-frontend/static/js/main.d5759f9a.chunk.js"
   },
   {
     "revision": "fbd9bc547407b502baa0",
