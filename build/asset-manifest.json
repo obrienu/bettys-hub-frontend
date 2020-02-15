@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/bettys-hub-frontend/static/css/main.4136c0f1.chunk.css",
-    "main.js": "/bettys-hub-frontend/static/js/main.23460e6b.chunk.js",
-    "main.js.map": "/bettys-hub-frontend/static/js/main.23460e6b.chunk.js.map",
+    "main.js": "/bettys-hub-frontend/static/js/main.6475efed.chunk.js",
+    "main.js.map": "/bettys-hub-frontend/static/js/main.6475efed.chunk.js.map",
     "runtime-main.js": "/bettys-hub-frontend/static/js/runtime-main.4b2474af.js",
     "runtime-main.js.map": "/bettys-hub-frontend/static/js/runtime-main.4b2474af.js.map",
     "static/js/2.b707e5f9.chunk.js": "/bettys-hub-frontend/static/js/2.b707e5f9.chunk.js",
     "static/js/2.b707e5f9.chunk.js.map": "/bettys-hub-frontend/static/js/2.b707e5f9.chunk.js.map",
     "index.html": "/bettys-hub-frontend/index.html",
-    "precache-manifest.7f98b036e597557d673ce8ac541e45aa.js": "/bettys-hub-frontend/precache-manifest.7f98b036e597557d673ce8ac541e45aa.js",
+    "precache-manifest.d82f7079af153deedd8c11073d05535a.js": "/bettys-hub-frontend/precache-manifest.d82f7079af153deedd8c11073d05535a.js",
     "service-worker.js": "/bettys-hub-frontend/service-worker.js",
     "static/css/main.4136c0f1.chunk.css.map": "/bettys-hub-frontend/static/css/main.4136c0f1.chunk.css.map",
     "static/js/2.b707e5f9.chunk.js.LICENSE": "/bettys-hub-frontend/static/js/2.b707e5f9.chunk.js.LICENSE",
@@ -35,6 +35,6 @@
     "static/js/runtime-main.4b2474af.js",
     "static/js/2.b707e5f9.chunk.js",
     "static/css/main.4136c0f1.chunk.css",
-    "static/js/main.23460e6b.chunk.js"
+    "static/js/main.6475efed.chunk.js"
   ]
 }

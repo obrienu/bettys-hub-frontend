@@ -13,7 +13,7 @@ export const getPreview = () => dispatch => {
   });
 
   axios
-    .get("api/rich/preview")
+    .get("https://bettys-api.herokuapp.com/api/rich/preview")
     .then(res =>
       dispatch({
         type: LOAD_PREVIEW,
@@ -29,7 +29,7 @@ export const getRich = () => dispatch => {
   });
 
   axios
-    .get("api/rich/")
+    .get("https://bettys-api.herokuapp.com/api/rich/")
     .then(res =>
       dispatch({
         type: LOAD_RICH,
@@ -45,7 +45,7 @@ export const getSingleProduct = id => dispatch => {
   });
 
   axios
-    .get(`api/rich/${id}`)
+    .get(`https://bettys-api.herokuapp.com/api/rich/${id}`)
     .then(res =>
       dispatch({
         type: LOAD_SINGLE_PRODUCT,

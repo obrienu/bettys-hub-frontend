@@ -8,7 +8,7 @@ export const getItems = shop => dispatch => {
   });
 
   axios
-    .get(`/api/${shop}`)
+    .get(`https://bettys-api.herokuapp.com/api/${shop}`)
     .then(res =>
       dispatch({
         type: GET_ITEMS,
@@ -24,7 +24,7 @@ export const getShowpage = (shop, id) => dispatch => {
   });
 
   axios
-    .get(`/api/${shop}/${id}`)
+    .get(`https://bettys-api.herokuapp.com/api/${shop}/${id}`)
     .then(res =>
       dispatch({
         type: GET_SHOWPAGE,
