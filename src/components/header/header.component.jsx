@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Logo from "../../assets/img/logo1.png";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import "./header.style.scss";
 import MenuBar from "../toggle.menu/toggle.menu.component";
 import CartIcon from "../cart.icon/cart.icon.component";
@@ -111,8 +111,10 @@ export class Header extends Component {
 
     return (
       <nav className="HeaderContainer">
-        <div className="HeaderLogoContainer">
-          <img src={Logo} alt="logo" className="HeaderLogo" />
+        <div>
+          <Link className="HeaderLogoContainer" to="/">
+            <img src={Logo} alt="logo" className="HeaderLogo" />
+          </Link>
         </div>
         <div className="HeaderNav">
           <MenuBar

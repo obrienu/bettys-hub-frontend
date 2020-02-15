@@ -12,6 +12,7 @@
   background: darken($color: $secondary_purple, $amount: 40);
 
   @include mediaMd {
+    min-height: 4rem;
     flex-flow: row wrap;
     justify-content: center;
     border-bottom: $base_border;
@@ -25,7 +26,7 @@
     margin: 0.5rem 0;
 
     @include mediaMd {
-      margin: 0 1rem;
+      margin: 0.8rem;
     }
   }
 

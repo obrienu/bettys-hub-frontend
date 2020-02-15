@@ -1,7 +1,6 @@
 @import "../../assets/styles/config";
 
 .ShowPage {
-  padding: 1rem 0;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -49,10 +48,9 @@
     }
 
     .ShowPageImage {
-      height: 15rem;
-      width: 12rem;
+      height: 18rem;
+      width: 14.4rem;
       @include easeOut;
-      border: solid 2px $secondary-purple;
       box-shadow: 5px 5px 5px rgba($secondary-purple, 0.5);
     }
 

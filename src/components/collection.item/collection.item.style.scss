@@ -21,9 +21,9 @@
     min-width: 152px;
   }
   @include mediaSm {
-    height: 120px;
-    width: 91px;
-    min-width: 91px;
+    height: 140px;
+    width: 106px;
+    min-width: 106px;
     margin: 0.5rem;
   }
 
@@ -50,7 +50,7 @@
     &:hover {
       cursor: pointer;
     }
-    margin: 0 0.25rem;
+    margin: 0 2%;
     width: 95.5%;
     height: 72.5%;
   }
@@ -67,7 +67,7 @@
       font-size: 0.8rem;
     }
     @include mediaSm {
-      font-size: 0.5rem;
+      font-size: 0.65rem;
     }
   }
 }
@@ -87,7 +87,7 @@
     font-size: 0.8rem;
   }
   @include mediaSm {
-    font-size: 0.5rem;
+    font-size: 0.65rem;
   }
 
   .CollectionItemFooterFavourite {
