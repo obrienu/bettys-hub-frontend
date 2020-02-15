@@ -34,7 +34,10 @@ class CollectionOverview extends Component {
     const { match, items } = this.props;
     if (match.params.category !== prevProps.match.params.category && items) {
       let filteredItems = items.data.filter((item, index) => index < 15);
-      let pages = Math.trunc(filteredItems.length / 15) + 1;
+      let pages =
+        filteredItems.length % 15 === 0
+          ? filteredItems.length / 15
+          : Math.trunc(filteredItems.length / 15) + 1;
       this.setState({
         ...this.state,
         items: [...filteredItems],

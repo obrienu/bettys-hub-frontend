@@ -35,7 +35,7 @@ class CheckoutPage extends Component {
     const { cartItems } = this.props;
     const body = { name, contact_details, contact, cartItems };
     axios
-      .post("api/checkout", body)
+      .post("https://bettys-api.herokuapp.com/api/checkout", body)
       .then(res =>
         this.setState({
           name: "",

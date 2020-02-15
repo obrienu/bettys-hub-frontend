@@ -3,6 +3,7 @@ import "./collection.item.style.scss";
 import { withRouter } from "react-router-dom";
 import { addCartItem } from "../../redux/cart/cart.actions";
 import { connect } from "react-redux";
+import placeholder from "../../assets/img/placeholder.jpg";
 
 const CollectionItem = ({ item, shop, history, addCartItem }) => {
   const { price, name, imageUrl, _id } = item;
@@ -22,7 +23,7 @@ const CollectionItem = ({ item, shop, history, addCartItem }) => {
       <img
         onClick={handleClick}
         className="CollectionItemImage"
-        src={imageUrl[0]}
+        src={imageUrl[0] || placeholder}
         alt={name}
       />
 

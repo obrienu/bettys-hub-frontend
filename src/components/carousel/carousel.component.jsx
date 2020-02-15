@@ -10,8 +10,8 @@ const Carousel = () => {
         <div className="CarouselTopText">
           <h1 className="CarouselHeaderText">Bettys Hub</h1>
           <h6 className="CarouselBodyText">
-            Your No. 1 stop shop for QUALITY and BUDGET FRIENDLY FABRICS and
-            FASHION ACCESSORIES. We are commited to giving you great bargains
+            Your No. 1 stop shop for quality and budget friendly fabrics and
+            fashion accessories. We are commited to giving you great bargains
             and excellent service.
           </h6>
         </div>

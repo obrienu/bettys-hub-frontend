@@ -3,6 +3,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { addCartItem } from "../../redux/cart/cart.actions";
 import { connect } from "react-redux";
+import placeholder from "../../assets/img/placeholder.jpg";
 
 const RichItem = props => {
   const { imageUrl, name, price, _id, pv } = props;
@@ -15,7 +16,11 @@ const RichItem = props => {
   return (
     <div className="RichItem">
       <Link to={`/rich/products/${_id}`}>
-        <img className="RichItemImage" src={imageUrl} alt={name} />
+        <img
+          className="RichItemImage"
+          src={imageUrl || placeholder}
+          alt={name}
+        />
       </Link>
       <div className="RichItemName">{name}</div>
       <div className="RichItemPrice">

@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/bettys-hub-frontend/static/css/main.4136c0f1.chunk.css",
-    "main.js": "/bettys-hub-frontend/static/js/main.6475efed.chunk.js",
-    "main.js.map": "/bettys-hub-frontend/static/js/main.6475efed.chunk.js.map",
+    "main.css": "/bettys-hub-frontend/static/css/main.f66c5930.chunk.css",
+    "main.js": "/bettys-hub-frontend/static/js/main.595893f3.chunk.js",
+    "main.js.map": "/bettys-hub-frontend/static/js/main.595893f3.chunk.js.map",
     "runtime-main.js": "/bettys-hub-frontend/static/js/runtime-main.4b2474af.js",
     "runtime-main.js.map": "/bettys-hub-frontend/static/js/runtime-main.4b2474af.js.map",
-    "static/js/2.b707e5f9.chunk.js": "/bettys-hub-frontend/static/js/2.b707e5f9.chunk.js",
-    "static/js/2.b707e5f9.chunk.js.map": "/bettys-hub-frontend/static/js/2.b707e5f9.chunk.js.map",
+    "static/js/2.30c5c042.chunk.js": "/bettys-hub-frontend/static/js/2.30c5c042.chunk.js",
+    "static/js/2.30c5c042.chunk.js.map": "/bettys-hub-frontend/static/js/2.30c5c042.chunk.js.map",
     "index.html": "/bettys-hub-frontend/index.html",
-    "precache-manifest.d82f7079af153deedd8c11073d05535a.js": "/bettys-hub-frontend/precache-manifest.d82f7079af153deedd8c11073d05535a.js",
+    "precache-manifest.b55e640e0f0fcadeee37a2a15b90f1c7.js": "/bettys-hub-frontend/precache-manifest.b55e640e0f0fcadeee37a2a15b90f1c7.js",
     "service-worker.js": "/bettys-hub-frontend/service-worker.js",
-    "static/css/main.4136c0f1.chunk.css.map": "/bettys-hub-frontend/static/css/main.4136c0f1.chunk.css.map",
-    "static/js/2.b707e5f9.chunk.js.LICENSE": "/bettys-hub-frontend/static/js/2.b707e5f9.chunk.js.LICENSE",
+    "static/css/main.f66c5930.chunk.css.map": "/bettys-hub-frontend/static/css/main.f66c5930.chunk.css.map",
+    "static/js/2.30c5c042.chunk.js.LICENSE": "/bettys-hub-frontend/static/js/2.30c5c042.chunk.js.LICENSE",
     "static/media/accessories.jpg": "/bettys-hub-frontend/static/media/accessories.97f0ca3f.jpg",
     "static/media/add1.jpg": "/bettys-hub-frontend/static/media/add1.d7a90211.jpg",
     "static/media/add2.jpg": "/bettys-hub-frontend/static/media/add2.7aa141f0.jpg",
@@ -33,8 +33,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.4b2474af.js",
-    "static/js/2.b707e5f9.chunk.js",
-    "static/css/main.4136c0f1.chunk.css",
-    "static/js/main.6475efed.chunk.js"
+    "static/js/2.30c5c042.chunk.js",
+    "static/css/main.f66c5930.chunk.css",
+    "static/js/main.595893f3.chunk.js"
   ]
 }

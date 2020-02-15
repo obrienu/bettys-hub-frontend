@@ -17,13 +17,13 @@ const PreviewWrapper = CollectionPreview(CollectionItem);
 class HomePage extends Component {
   constructor(props) {
     super(props);
-    this.state = { width: 0 };
+    /* this.state = { width: 0 };
 
-    this.updateDimensions = this.updateDimensions.bind(this);
+    this.updateDimensions = this.updateDimensions.bind(this); */
   }
 
   componentDidMount() {
-    window.addEventListener("resize", this.updateDimensions);
+    // window.addEventListener("resize", this.updateDimensions);
     const { accessories, fabric } = this.props;
     if (!accessories && !fabric) {
       compose(
@@ -33,29 +33,23 @@ class HomePage extends Component {
     }
   }
 
-  updateDimensions() {
+  /*  updateDimensions() {
     this.setState({ width: window.innerWidth });
-  }
+  } */
 
-  componentWillUnmount() {
+  /* componentWillUnmount() {
     window.removeEventListener("resize", this.updateDimensions);
-  }
+  } */
 
   render() {
-    let index;
-    index = this.state.width <= 775 ? 8 : 5;
     return (
       <main className="Homepage">
         <Carousel />
-        <PreviewWrapper
-          name="Fabric"
-          data={this.props.fabric}
-          itemNumber={index}
-        />
+        <PreviewWrapper name="Fabric" data={this.props.fabric} itemNumber={8} />
         <PreviewWrapper
           name="Accessories"
           data={this.props.accessories}
-          itemNumber={index}
+          itemNumber={8}
         />
         <RichProductPreview />
       </main>

@@ -7,6 +7,7 @@ import { getShowpage } from "../../redux/shop/shop.actions";
 import { createStructuredSelector } from "reselect";
 import Loader from "../../components/loader/loader.component";
 import { addCartItem } from "../../redux/cart/cart.actions";
+import placeholder from "../../assets/img/placeholder.jpg";
 
 class ShowPage extends Component {
   constructor(props) {
@@ -53,13 +54,13 @@ class ShowPage extends Component {
                   onClick={() => {
                     this.selectThumbnail(image);
                   }}
-                  background={image}
+                  background={image || placeholder}
                 />
               ))}
             </div>
             <img
               className="ShowPageImage"
-              src={this.state.isSelected}
+              src={this.state.isSelected || placeholder}
               alt="ThumbnailImage"
             />
           </div>

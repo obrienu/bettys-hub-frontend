@@ -63,7 +63,7 @@ export class ContactUs extends Component {
     };
 
     axios
-      .post("/api/customer", body)
+      .post("https://bettys-api.herokuapp.com/api/customer", body)
       .then(res =>
         this.setState({
           Firstname: "",

@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const AdItem = props => {
   return (
     <div className="AdItem">
-      <Link to="/rich/join">
+      <Link to="/rich/compensation">
         <img src={props.image} alt="ad" className="AdImage" />
       </Link>
     </div>

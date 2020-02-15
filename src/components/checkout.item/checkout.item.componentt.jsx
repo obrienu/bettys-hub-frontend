@@ -2,6 +2,7 @@ import React from "react";
 import "./checkout.item.style.scss";
 import { deleteItem } from "../../redux/cart/cart.actions";
 import { connect } from "react-redux";
+import placeholder from "../../assets/img/placeholder.jpg";
 
 const CheckoutItem = ({ cartItem, deleteItem }) => {
   const { name, imageUrl, price } = cartItem;
@@ -11,7 +12,7 @@ const CheckoutItem = ({ cartItem, deleteItem }) => {
   return (
     <div className="checkout-item ">
       <div className="image-container">
-        <img src={imageUrl[0]} alt="item" />
+        <img src={imageUrl[0] || placeholder} alt="item" />
       </div>
       <span className="name">{name}</span>
 
