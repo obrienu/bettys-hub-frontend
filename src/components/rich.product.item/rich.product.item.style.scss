@@ -8,6 +8,7 @@
   margin: 0.5rem;
   padding: 0.5rem;
   width: 33%;
+  border-radius: 5px;
 
   @include mediaLg {
     flex-flow: row nowrap;
@@ -21,6 +22,7 @@
 
   .RichProductText {
     height: 60%;
+    max-height: 60%;
     padding: 0.5rem;
     width: 100%;
 
@@ -55,7 +57,7 @@
     }
   }
 
-  .RichProductImage {
+  .RichProductImageContainer {
     height: 40%;
     width: 100%;
     overflow: hidden;

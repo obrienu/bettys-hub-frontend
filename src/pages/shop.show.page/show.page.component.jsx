@@ -8,6 +8,7 @@ import { createStructuredSelector } from "reselect";
 import Loader from "../../components/loader/loader.component";
 import { addCartItem } from "../../redux/cart/cart.actions";
 import placeholder from "../../assets/img/placeholder.jpg";
+import Editor from "../../components/texteditor/editor.component";
 
 class ShowPage extends Component {
   constructor(props) {
@@ -67,7 +68,9 @@ class ShowPage extends Component {
 
           <div className="ShowPageText">
             <h3>{name.toUpperCase()}</h3>
-            <div className="ShowPageDescription">{description}</div>
+            <div className="ShowPageDescription">
+              <Editor editorValue={description} />
+            </div>
             <div className="ShowPageFooter">
               <span
                 title="Add to cart"

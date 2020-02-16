@@ -2,9 +2,19 @@
 
 .RichShowPage {
   width: 70%;
-  margin: 0 auto;
+  min-height: calc(100vh - 30.2rem);
+  margin: 1rem auto;
   @include mediaSm {
+    min-height: calc(100vh - 23.2rem);
     width: 100%;
+  }
+
+  .RichShowPageImageContainer {
+    width: 100%;
+    height: auto;
+    .RichShowPageImage {
+      max-width: 90%;
+    }
   }
 
   hr {
@@ -13,7 +23,6 @@
 
   .RichShowPageHeader {
     color: $secondary_purple;
-    margin: 1rem 0;
   }
 
   .fa-cart-plus {

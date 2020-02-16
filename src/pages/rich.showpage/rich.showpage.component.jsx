@@ -6,6 +6,7 @@ import { getSingleProduct } from "../../redux/rich/rich.action";
 import { addCartItem } from "../../redux/cart/cart.actions";
 import { richItemSelector } from "../../redux/rich/rich.selection";
 import Loader from "../../components/loader/loader.component";
+import Editor from "../../components/texteditor/editor.component";
 
 export class RichShowPage extends Component {
   constructor(props) {
@@ -30,10 +31,16 @@ export class RichShowPage extends Component {
     return item ? (
       <div className="RichShowPage" style={{ padding: "1rem" }}>
         <h2 className="RichShowPageHeader">{item.name}</h2>
-        <div className="RichShowPageImage">
-          <img src={item.imageUrl} alt={item.name} />
+        <div className="RichShowPageImageContainer">
+          <img
+            className="RichShowPageImage"
+            src={item.imageUrl}
+            alt={item.name}
+          />
         </div>
-        <div>{item.text}</div>
+        <div className="RichShowPageText">
+          <Editor editorValue={item.text} />
+        </div>
 
         <hr />
         <div

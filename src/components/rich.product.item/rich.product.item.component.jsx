@@ -3,6 +3,7 @@ import { Fragment } from "react";
 import "./rich.product.item.style.scss";
 import { withRouter } from "react-router-dom";
 import Button from "../button/button.component";
+import Editor from ".././texteditor/editor.component";
 
 const RichProductItem = ({
   name,
@@ -20,14 +21,16 @@ const RichProductItem = ({
     <div className="RichProductItem">
       <div className="RichProductText">
         <h1 className="RichProductHeader">{name}</h1>
-        <p>{text.substring(0, 400)}......</p>
+        <div>
+          <Editor productPreview={true} editorValue={text} />
+        </div>
         <Button onClick={handleClick} width={"6rem"} className="">
           Read More
         </Button>
       </div>
 
-      <div className="RichProductImage">
-        <img src={imageUrl} alt={name} />
+      <div className="RichProductImageContainer">
+        <img className="RichProductImage" src={imageUrl} alt={name} />
       </div>
     </div>
   );
@@ -39,7 +42,9 @@ const RichProductItem = ({
       </div>
       <div className="RichProductText">
         <h1 className="RichProductHeaderRevered">{name}</h1>
-        <p>{text.substring(0, 400)}......</p>
+        <div>
+          <Editor productPreview={true} editorValue={text} />
+        </div>
         <Button onClick={handleClick} width={"6rem"} className="">
           Read More
         </Button>
