@@ -1,3 +1,4 @@
+@import "../../assets/styles/config";
 .LoaderContainer {
   height: 5rem;
   width: 100%;
@@ -10,10 +11,10 @@
 .Loader {
   height: 40px;
   width: 40px;
-  border: 3px grey solid;
-  border-top-color: rgb(48, 46, 46);
+  border: 3px $primary_background solid;
+  border-top-color: $secondary_purple;
   border-radius: 100%;
-  animation: spinner 500ms linear infinite;
+  animation: spinner 1000ms linear infinite;
 }
 
 @keyframes spinner {

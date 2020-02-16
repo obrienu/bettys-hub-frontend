@@ -1,21 +1,19 @@
 @import "../../assets/styles/config";
 
 .CustomInput {
-  width: 100%;
-  background-color: $primary_background;
+  width: 80%;
   position: relative;
-  margin-top: 1rem;
-  margin-left: 1rem;
+  margin: 1rem 1.5rem 0;
+  height: 2rem;
 
   .CustomInputInput {
+    width: 100%;
     color: $primary_text_color;
     background: $primary_background;
     border: none;
     display: block;
     border-bottom: solid 1px $primary_purple;
     height: 1.5rem;
-    padding-left: 0.5rem;
-    width: 80%;
 
     &:focus {
       outline: none;
@@ -23,31 +21,31 @@
 
     &:focus {
       label.CustomInputLabel {
-        top: -11px;
+        top: -1rem;
         font-size: 0.6rem;
         color: $secondary_purple;
         @include mediaMd {
-          top: 0;
+          top: -1rem;
         }
       }
     }
   }
 
   label.CustomInputLabel {
+    width: 100%;
     font-size: 0.7rem;
     font-weight: normal;
     position: absolute;
     pointer-events: none;
-    left: 0.5rem;
+
     top: 10px;
     transition: 300ms ease all;
 
     &.Shrink {
-      top: -11px;
+      top: -1rem;
       font-size: 0.6rem;
       color: $secondary_purple;
       @include mediaMd {
-        top: 0;
       }
     }
   }

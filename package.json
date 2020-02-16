@@ -8,6 +8,7 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "axios": "^0.19.1",
+    "draft-js": "^0.11.4",
     "gh-pages": "^2.2.0",
     "google-map-react": "^1.1.5",
     "node-sass": "^4.13.0",
