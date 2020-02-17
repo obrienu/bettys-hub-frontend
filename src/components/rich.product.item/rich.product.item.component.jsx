@@ -37,8 +37,8 @@ const RichProductItem = ({
 
   const reversed = (
     <div className="RichProductItem">
-      <div className="RichProductImage">
-        <img src={imageUrl} alt={name} />
+      <div className="RichProductImageContainer">
+        <img className="RichProductImage" src={imageUrl} alt={name} />
       </div>
       <div className="RichProductText">
         <h1 className="RichProductHeaderRevered">{name}</h1>

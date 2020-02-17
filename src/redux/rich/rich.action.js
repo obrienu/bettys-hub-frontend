@@ -3,7 +3,8 @@ import {
   LOADING_RICH,
   LOAD_RICH,
   LOAD_PREVIEW,
-  LOAD_SINGLE_PRODUCT
+  LOAD_SINGLE_PRODUCT,
+  CLEAR_SINGLE_PRODUCT
 } from "./rich.types";
 import { getError } from "../errors/error.actions";
 
@@ -41,7 +42,7 @@ export const getRich = () => dispatch => {
 
 export const getSingleProduct = id => dispatch => {
   dispatch({
-    type: LOADING_RICH
+    type: CLEAR_SINGLE_PRODUCT
   });
 
   axios

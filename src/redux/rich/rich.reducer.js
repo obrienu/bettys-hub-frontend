@@ -2,7 +2,8 @@ import {
   LOADING_RICH,
   LOAD_RICH,
   LOAD_PREVIEW,
-  LOAD_SINGLE_PRODUCT
+  LOAD_SINGLE_PRODUCT,
+  CLEAR_SINGLE_PRODUCT
 } from "./rich.types";
 
 const initialState = {
@@ -39,6 +40,12 @@ const richReducer = (state = initialState, action) => {
         ...state,
         loading: false,
         showItem: action.payload
+      };
+    }
+    case CLEAR_SINGLE_PRODUCT: {
+      return {
+        ...state,
+        showItem: null
       };
     }
     default:

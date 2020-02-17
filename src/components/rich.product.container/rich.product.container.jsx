@@ -22,6 +22,7 @@ export class RichProductContainer extends Component {
 
   componentDidMount() {
     const { getRich } = this.props;
+
     getRich();
   }
 

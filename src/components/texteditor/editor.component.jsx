@@ -3,11 +3,9 @@ import {
   EditorState,
   Editor as DraftEditor,
   RichUtils,
-  convertToRaw,
   convertFromRaw
 } from "draft-js";
 import "./editor.style.scss";
-import ToolBar from "./components/toolbar/toolbar.component";
 import { styleMap, myBlockStyleFn } from "./assets/editorstyleFunction";
 
 export class Editor extends Component {
@@ -55,23 +53,38 @@ export class Editor extends Component {
     }
   }
 
+  componentDidUpdate(prevProps) {
+    const editorValue = this.props.editorValue;
+    if (editorValue !== prevProps.editorValue) {
+      let contentState = convertFromRaw(JSON.parse(this.props.editorValue));
+      this.setState({
+        editorState: EditorState.createWithContent(contentState)
+      });
+    }
+  }
+
   render() {
     return (
-      <div
-        className={
-          this.props.productPreview
-            ? "EditorPreview EditorWrapper"
-            : "EditorWrapper"
-        }
-      >
-        <DraftEditor
-          blockStyleFn={myBlockStyleFn}
-          customStyleMap={styleMap}
-          placeholder="Description ................"
-          editorState={this.state.editorState}
-          onChange={this.onChange}
-          readOnly={true}
-        />
+      <div>
+        {!this.props.productPreview ? (
+          <div className="TextEditorHeader">Product Details</div>
+        ) : null}
+        <div
+          className={
+            this.props.productPreview
+              ? "EditorPreview EditorWrapper"
+              : "EditorWrapper"
+          }
+        >
+          <DraftEditor
+            blockStyleFn={myBlockStyleFn}
+            customStyleMap={styleMap}
+            placeholder="Description ................"
+            editorState={this.state.editorState}
+            onChange={this.onChange}
+            readOnly={true}
+          />
+        </div>
       </div>
     );
   }

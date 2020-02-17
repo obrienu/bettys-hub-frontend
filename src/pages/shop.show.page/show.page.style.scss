@@ -6,13 +6,15 @@
   justify-content: center;
   align-items: center;
   background: $primary_background;
-
+  min-height: calc(100vh - 21rem);
   @include mediaMd {
-    min-height: 40rem;
+    min-height: calc(100vh - 26rem);
   }
 
   .ShowPageContainer {
-    background: $primary_background;
+    background: #fff;
+    margin: 1rem auto;
+    border-radius: 10px;
     margin: 0 auto;
     height: 60%;
     min-width: 60%;

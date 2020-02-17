@@ -4,15 +4,21 @@
   width: 70%;
   min-height: calc(100vh - 30.2rem);
   margin: 1rem auto;
+  background: #fff;
+  border-radius: 10px;
+  @include mediaMd {
+    width: 90%;
+  }
   @include mediaSm {
     min-height: calc(100vh - 23.2rem);
-    width: 100%;
+    width: 90%;
   }
 
   .RichShowPageImageContainer {
     width: 100%;
     height: auto;
     .RichShowPageImage {
+      max-height: 25rem;
       max-width: 90%;
     }
   }

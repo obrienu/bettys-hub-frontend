@@ -16,21 +16,22 @@
   }
 
   @include mediaSm {
-    height: 120px;
-    width: 91px;
+    height: 140px;
+    width: 106px;
     margin: 0.5rem 1px;
   }
 
   @include mediaXm {
-    height: 100px;
-    width: 83px;
-    margin: 0.5rem 5px;
+    height: 140px;
+    width: 106px;
+    margin: 0.5rem 1px;
   }
 
   .RichItemImage {
     margin: 0 0.2rem;
     width: 95.5%;
     height: 72.5%;
+    border-bottom: solid 1px rgba(0, 0, 0, 0.233);
 
     @include mediaSm {
       margin: 0 0.1rem;
