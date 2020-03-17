@@ -20,6 +20,10 @@
     font-size: 2rem;
     border-bottom: $base_border;
     margin: 1rem 0;
+
+    @include mediaSm {
+      font-size: 1.8rem;
+    }
   }
 
   .ProductPreview {

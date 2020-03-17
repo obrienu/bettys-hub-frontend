@@ -70,8 +70,8 @@ function registerValidSW(swUrl, config) {
               // but the previous service worker will still serve the older
               // content until all client tabs are closed.
               alert(
-                "New update available for Bettys Hub" +
-                  "Please close app/ browser tab to initialise update"
+                "New update available for Bettys Hub " +
+                  "Please close app/browser tab to initialise update"
               );
 
               // Execute callback

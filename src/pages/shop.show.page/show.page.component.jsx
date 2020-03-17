@@ -65,21 +65,23 @@ class ShowPage extends Component {
               alt="ThumbnailImage"
             />
           </div>
-
-          <div className="ShowPageText">
+          <div className="ShowPageNameHeader">
             <h3>{name.toUpperCase()}</h3>
-            <div className="ShowPageDescription">
-              <Editor editorValue={description} />
-            </div>
-            <div className="ShowPageFooter">
-              <span
-                title="Add to cart"
-                onClick={() => addCartItem(this.props.item)}
-                className="cart"
-              >
+            <h3>#{price}</h3>
+            <div
+              title="Add to cart"
+              onClick={() => addCartItem(this.props.item)}
+              className="ShowPageAddToCart"
+            >
+              Add to Cart{" "}
+              <span>
                 <i className="fas fa-cart-plus"></i>
               </span>
-              <span>Price: #{price}</span>
+            </div>
+          </div>
+          <div className="ShowPageText">
+            <div className="ShowPageDescription">
+              <Editor editorValue={description} />
             </div>
           </div>
         </div>

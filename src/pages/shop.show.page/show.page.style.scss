@@ -15,17 +15,23 @@
     background: #fff;
     margin: 1rem auto;
     border-radius: 10px;
-    margin: 0 auto;
     height: 60%;
     min-width: 60%;
     display: grid;
-    grid-template-columns: max-content auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: max-content max-content;
     grid-gap: 1rem;
-    width: 90%;
+    width: 60%;
+    grid-template-areas: "imagearea nameheader" "description description";
 
-    @include mediaMd {
+    @include mediaLg{
+      width: 80%;
+    }
+
+    @include mediaSm {
+      grid-template-areas: "imagearea" "nameheader" "description";
       grid-template-columns: auto;
-      grid-template-rows: max-content max-content;
+      grid-template-rows: 1fr max-content 1fr;
       height: 95%;
       grid-gap: 0;
       padding-left: 1rem;
@@ -38,28 +44,30 @@
       display: grid;
       grid-template-columns: max-content max-content;
       grid-gap: 0.5rem;
+      grid-area: imagearea;
 
       @include mediaMd {
         height: 100%;
       }
-    }
 
-    .ShowPageThumbnails {
-      display: flex;
-      flex-flow: column nowrap;
-    }
+      .ShowPageThumbnails {
+        display: flex;
+        flex-flow: column nowrap;
+      }
 
-    .ShowPageImage {
-      height: 18rem;
-      width: 14.4rem;
-      @include easeOut;
-      box-shadow: 5px 5px 5px rgba($secondary-purple, 0.5);
+      .ShowPageImage {
+        height: 18rem;
+        width: 14.4rem;
+        @include easeOut;
+        box-shadow: 5px 5px 5px rgba($secondary-purple, 0.5);
+      }
     }
 
     .ShowPageText {
       height: 100%;
       width: 95%;
       padding-top: 1rem;
+      grid-area: description;
 
       h3 {
         border-bottom: $base_border;
@@ -68,16 +76,24 @@
         padding: 0.5rem 0;
         border-bottom: $base_border;
       }
-      .ShowPageFooter {
-        height: 10%;
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-between;
-        padding: 0.5rem 0;
-        font-weight: 700;
+    }
 
-        .fas.fa-cart-plus {
-          cursor: pointer;
+    .ShowPageNameHeader {
+      grid-area: nameheader;
+      margin-top: 1rem;
+
+      .ShowPageAddToCart {
+        padding: 0.5rem;
+        background: $primary_purple;
+        cursor: pointer;
+        color: #fff;
+        width: 60%;
+        display: block;
+        border-radius: 5px;
+
+        &:hover {
+          background: $secondary_purple;
+          @include easeOut;
         }
       }
     }

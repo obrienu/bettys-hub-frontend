@@ -1,6 +1,6 @@
 {
-  "short_name": "Betty Hub",
-  "name": "Betty Hub",
+  "short_name": "Bettys Hub",
+  "name": "Bettys Hub",
   "icons": [
     {
       "src": "favicon.ico",
@@ -21,5 +21,8 @@
   "start_url": "https://obrienu.github.io/bettys-hub-frontend",
   "display": "standalone",
   "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "background_color": "#ffffff",
+  "lang": "en-UK",
+  "scope": "/",
+  "description": "Your No. 1 stop shop for quality and budget friendly fabrics and fashion accessories. We are commited to giving you great bargains and excellent service"
 }

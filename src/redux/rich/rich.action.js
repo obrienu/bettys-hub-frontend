@@ -8,13 +8,15 @@ import {
 } from "./rich.types";
 import { getError } from "../errors/error.actions";
 
+let api = "https://bettys-api.herokuapp.com" //"http://localhost:5000" ||;
+
 export const getPreview = () => dispatch => {
   dispatch({
     type: LOADING_RICH
   });
 
   axios
-    .get("https://bettys-api.herokuapp.com/api/rich/preview")
+    .get(`${api}/api/rich/preview`)
     .then(res =>
       dispatch({
         type: LOAD_PREVIEW,
@@ -30,7 +32,7 @@ export const getRich = () => dispatch => {
   });
 
   axios
-    .get("https://bettys-api.herokuapp.com/api/rich/")
+    .get(`${api}/api/rich/`)
     .then(res =>
       dispatch({
         type: LOAD_RICH,
@@ -46,7 +48,7 @@ export const getSingleProduct = id => dispatch => {
   });
 
   axios
-    .get(`https://bettys-api.herokuapp.com/api/rich/${id}`)
+    .get(`${api}/api/rich/${id}`)
     .then(res =>
       dispatch({
         type: LOAD_SINGLE_PRODUCT,

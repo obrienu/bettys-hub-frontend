@@ -2,13 +2,15 @@ import { GET_ITEMS, LOADING_ITEM, GET_SHOWPAGE } from "./shop.types";
 import axios from "axios";
 import { getError } from "../errors/error.actions";
 
+let api = "https://bettys-api.herokuapp.com" // "http://localhost:5000" || ;
+
 export const getItems = shop => dispatch => {
   dispatch({
     type: LOADING_ITEM
   });
 
   axios
-    .get(`https://bettys-api.herokuapp.com/api/${shop}`)
+    .get(`${api}/api/${shop}`)
     .then(res =>
       dispatch({
         type: GET_ITEMS,
@@ -24,7 +26,7 @@ export const getShowpage = (shop, id) => dispatch => {
   });
 
   axios
-    .get(`https://bettys-api.herokuapp.com/api/${shop}/${id}`)
+    .get(`${api}/api/${shop}/${id}`)
     .then(res =>
       dispatch({
         type: GET_SHOWPAGE,

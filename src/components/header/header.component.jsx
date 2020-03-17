@@ -67,17 +67,26 @@ export class Header extends Component {
             : "HeaderNavLinkDropdown"
         }
       >
-        <li onClick={this.toggleMenu} className="links">
+        <li
+          onClick={this.toggleMenu}
+          className={this.state.showMenu ? "links dropLinks show" : "links"}
+        >
           <NavLink activeClassName="ActiveLink" className="Link" to="/" exact>
             Home
           </NavLink>
         </li>
-        <li onClick={this.toggleMenu} className="links">
+        <li
+          onClick={this.toggleMenu}
+          className={this.state.showMenu ? "links dropLinks show" : "links"}
+        >
           <NavLink activeClassName="ActiveLink" className="Link" to="/fabric">
             Fabrics
           </NavLink>
         </li>
-        <li onClick={this.toggleMenu} className="links">
+        <li
+          onClick={this.toggleMenu}
+          className={this.state.showMenu ? "links dropLinks show" : "links"}
+        >
           <NavLink
             activeClassName="ActiveLink"
             className="Link"
@@ -86,22 +95,34 @@ export class Header extends Component {
             Accessories
           </NavLink>
         </li>
-        <li onClick={this.toggleMenu} className="links">
+        <li
+          onClick={this.toggleMenu}
+          className={this.state.showMenu ? "links dropLinks show" : "links"}
+        >
           <NavLink activeClassName="ActiveLink" className="Link" to="/rich">
             Rich
           </NavLink>
         </li>
-        <li onClick={this.toggleMenu} className="links">
+        <li
+          onClick={this.toggleMenu}
+          className={this.state.showMenu ? "links dropLinks show" : "links"}
+        >
           <NavLink activeClassName="ActiveLink" className="Link" to="/about">
             About
           </NavLink>
         </li>
-        <li onClick={this.toggleMenu} className="links">
+        <li
+          onClick={this.toggleMenu}
+          className={this.state.showMenu ? "links dropLinks show" : "links"}
+        >
           <NavLink activeClassName="ActiveLink" className="Link" to="/checkout">
             Checkout
           </NavLink>
         </li>
-        <li onClick={this.toggleMenu} className="links">
+        <li
+          onClick={this.toggleMenu}
+          className={this.state.showMenu ? "links dropLinks show" : "links"}
+        >
           <NavLink activeClassName="ActiveLink" className="Link" to="/Contact">
             Contact Us
           </NavLink>

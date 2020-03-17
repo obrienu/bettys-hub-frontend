@@ -47,8 +47,8 @@
       position: absolute;
       right: 0;
       top: 6rem;
-      width: 8rem;
-      height: 16rem;
+      width: 10rem;
+      height: calc(100vh - 6rem);
       display: none;
       flex-flow: column nowrap;
       background: $primary_background;
@@ -87,18 +87,40 @@
 .Drop {
   animation-name: drop;
   animation-duration: 300ms;
-  animation-timing-function: ease-in;
+  animation-timing-function: linear;
 }
+
+.links.dropLinks {
+  &.show {
+    animation-name: glide;
+    animation-duration: 300ms;
+    animation-timing-function: ease-out;
+  }
+}
+
 @keyframes drop {
   0% {
-    height: 0;
     opacity: 0;
     width: 0;
   }
 
   100% {
-    height: 15rem;
-    width: 8;
+    width: 10rem;
     opacity: 1;
+  }
+}
+@keyframes glide {
+  0% {
+    transform: translate3d(0px, 200px, 0);
+  }
+
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@for $x from 1 through 7 {
+  .links.show:nth-child(#{$x}) {
+    animation-delay: $x * 0.1s;
   }
 }
